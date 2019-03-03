@@ -5,8 +5,8 @@ Fluentd installation for Ubuntu:
 curl -L https://toolbelt.treasuredata.com/sh/install-debian-stretch-td-agent3.sh | sh
 cd /var/log/nginx
 
-# Change permission
-sudo chmod -R 777 grid
+# Change permission to read the log directory
+sudo chmod -R r+w dir
 
 # Change configuration
 cd /etc/td-agent
