@@ -5,14 +5,14 @@ Fluentd installation for Ubuntu:
 curl -L https://toolbelt.treasuredata.com/sh/install-debian-stretch-td-agent3.sh | sh
 cd /var/log/nginx
 
-#change permission
+# Change permission
 sudo chmod -R 777 grid
 
-#change configuration
+# Change configuration
 cd /etc/td-agent
 sudo mv td-agent.conf td-agent.orig
 cd /opt/td-agent/usr/sbin
 
-#Install reguired Plugins
+# Install reguired Plugins
 sudo ./td-agent-gem install fluent-plugin-record-transformer
 
